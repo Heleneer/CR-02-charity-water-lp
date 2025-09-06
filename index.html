@@ -3,12 +3,109 @@
 <head>
   <meta charset="UTF-8">
   <title>charity: water Landing Page</title>
-  <link rel="stylesheet" href="styles.css">
   <!-- 
     Proxima Nova is not a free web font, so we use Montserrat as a free, similar-looking alternative.
     This link loads Montserrat from Google Fonts.
   -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+  <style>
+    /* Beginner-friendly CSS for charity: water landing page */
+
+    /* Set up the main font and background color for the whole page */
+    body {
+      background-color: #003366; /* Deep blue background */
+      font-family: 'Montserrat', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+
+    /* Style for the left side */
+    .left-side {
+      float: left; /* Put this section on the left */
+      width: 50%;  /* Take up half the page */
+      padding: 40px;
+      box-sizing: border-box;
+      background: #fff;
+      min-height: 100vh; /* Make sure it fills the height */
+    }
+
+    /* Main heading style: bold */
+    .main-heading {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-weight: 700; /* Bold */
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    /* Body text style: normal weight */
+    .main-body {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-weight: 400; /* Regular */
+      font-size: 1.1em;
+      margin-bottom: 30px;
+    }
+
+    /* Style for the call-to-action button */
+    .cta-button, .left-side button {
+      display: block; /* Makes the button take up the full line so it can be centered */
+      width: 180px; /* Set a fixed width for the button */
+      margin: 0 auto; /* Center the button horizontally */
+      padding: 15px 0; /* Add space inside the button */
+      background-color: #FFC907; /* charity: water yellow */
+      color: #222; /* Dark text for contrast */
+      text-align: center; /* Center the text inside the button */
+      text-decoration: none; /* Remove underline from the link */
+      font-family: 'Montserrat', Arial, sans-serif; /* Use the same font */
+      font-weight: 700; /* Bold text */
+      font-size: 1em;
+      border: none; /* No border */
+      border-radius: 5px; /* Rounded corners */
+      cursor: pointer; /* Show pointer on hover */
+      transition: background 0.2s;
+      margin-top: 20px;
+    }
+
+    /* Add a simple hover effect */
+    .cta-button:hover, .left-side button:hover {
+      background-color: #e6b800;
+    }
+
+    /* Style for the right side */
+    .right-side {
+      float: left; /* Put this section next to the left side */
+      width: 50%;  /* Take up the other half */
+      height: 100vh; /* Full height of the page */
+      overflow: hidden; /* Hide anything outside the box */
+    }
+
+    /* Make the image cover the right side */
+    .right-side img {
+      width: 100%;   /* Image fills the width */
+      height: 100vh; /* Image fills the height */
+      object-fit: cover; /* Image covers the box without stretching */
+      display: block;
+    }
+
+    /* Clear floats after the two columns */
+    body::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Responsive: stack columns on small screens */
+    @media (max-width: 700px) {
+      .left-side, .right-side {
+        float: none;
+        width: 100%;
+        min-height: auto;
+      }
+      .right-side img {
+        height: 200px;
+      }
+    }
+  </style>
 </head>
 <body>
   <!-- Left side: Content -->
@@ -19,7 +116,8 @@
     <p class="main-body">
       Students are proving that you don't need to have deep pockets or to wait until after graduation to make a difference -- Bring clean water to families around the world today
     </p>
-    <button>Donate Now</button>
+    <!-- Centered call-to-action button -->
+    <button onclick="alert('Thank you for wanting to be the change!')">Be the Change</button>
   </div>
 
   <!-- Right side: Image -->
