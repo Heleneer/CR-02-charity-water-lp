@@ -13,11 +13,24 @@
 
     /* Set up the main font and background color for the whole page */
     body {
-      background-color: #003366; /* Deep blue background */
+      background-color: #FFC907; /* Bright yellow background */
       font-family: 'Montserrat', Arial, sans-serif;
       margin: 0;
       padding: 0;
       color: #222;
+    }
+
+    /* Header styles */
+    .header {
+      width: 100%;
+      background: #fff;
+      padding: 16px 0;
+      text-align: center;
+      box-sizing: border-box;
+    }
+    .header img {
+      height: 48px; /* Set logo height */
+      vertical-align: middle;
     }
 
     /* Style for the left side */
@@ -26,24 +39,26 @@
       width: 50%;  /* Take up half the page */
       padding: 40px;
       box-sizing: border-box;
-      background: #fff;
+      background: #003366; /* Deep blue background for content */
       min-height: 100vh; /* Make sure it fills the height */
     }
 
-    /* Main heading style: bold */
+    /* Main heading style: bold and white */
     .main-heading {
       font-family: 'Montserrat', Arial, sans-serif;
       font-weight: 700; /* Bold */
       font-size: 2em;
       margin-bottom: 20px;
+      color: #fff; /* White text */
     }
 
-    /* Body text style: normal weight */
+    /* Body text style: normal weight and white */
     .main-body {
       font-family: 'Montserrat', Arial, sans-serif;
       font-weight: 400; /* Regular */
       font-size: 1.1em;
       margin-bottom: 30px;
+      color: #fff; /* White text */
     }
 
     /* Style for the call-to-action button */
@@ -108,6 +123,12 @@
   </style>
 </head>
 <body>
+  <!-- Header with logo at the top -->
+  <div class="header">
+    <!-- Logo image (make sure cw_logo-2.png is in your images folder) -->
+    <img src="images/cw_logo-2.png" alt="charity: water logo">
+  </div>
+
   <!-- Left side: Content -->
   <div class="left-side">
     <!-- Main heading in bold -->
