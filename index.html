@@ -8,6 +8,7 @@
     This link loads Montserrat from Google Fonts.
   -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     /* Beginner-friendly CSS for charity: water landing page */
 
@@ -100,6 +101,7 @@
       height: 100vh; /* Image fills the height */
       object-fit: cover; /* Image covers the box without stretching */
       display: block;
+      border-radius: 8px;
     }
 
     /* Clear floats after the two columns */
@@ -110,14 +112,40 @@
     }
 
     /* Responsive: stack columns on small screens */
-    @media (max-width: 700px) {
+    @media (max-width: 900px) {
       .left-side, .right-side {
-        float: none;
         width: 100%;
+        float: none;
         min-height: auto;
+        height: auto;
+      }
+      .left-side {
+        padding: 24px;
       }
       .right-side img {
-        height: 200px;
+        height: 220px;
+        border-radius: 8px;
+      }
+      .right-side {
+        height: auto;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .main-heading {
+        font-size: 1.3em;
+      }
+      .main-body {
+        font-size: 1em;
+      }
+      .left-side {
+        padding: 12px;
+      }
+      .header img {
+        height: 36px;
+      }
+      .right-side img {
+        height: 140px;
       }
     }
   </style>
